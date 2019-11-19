@@ -27,7 +27,7 @@ export default {
 
 After that you can register global attributes like this:
 
-```
+```html
 <GlobalAttrs
   v-if="attributesConnected"
   data-foo="bar"
