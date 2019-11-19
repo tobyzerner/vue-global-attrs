@@ -1,0 +1,30 @@
+{
+  "name": "vue-global-attrs",
+  "version": "0.1.0",
+  "description": "Apply attributes to the the document element from a component.",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.es.js",
+  "unpkg": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "repository": "tobyzerner/vue-global-attrs",
+  "bugs": {
+    "url": "https://github.com/tobyzerner/vue-global-attrs/issues"
+  },
+  "homepage": "https://github.com/tobyzerner/vue-global-attrs#readme",
+  "author": "Toby Zerner",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c",
+    "build:watch": "rollup -cw"
+  },
+  "files": [
+    "./dist",
+    "./src",
+    "./README.md"
+  ],
+  "devDependencies": {
+    "rollup": "^1.20.2",
+    "rollup-plugin-terser": "^5.1.1"
+  }
+}
