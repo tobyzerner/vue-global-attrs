@@ -19,9 +19,9 @@
     "build:watch": "rollup -cw"
   },
   "files": [
-    "./dist",
-    "./src",
-    "./README.md"
+    "dist",
+    "src",
+    "README.md"
   ],
   "devDependencies": {
     "rollup": "^1.20.2",
