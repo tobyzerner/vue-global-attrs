@@ -1,6 +1,6 @@
 # vue-global-attrs
 
-> Apply attributes to the the document element from a component.
+> Declaratively apply attributes to the the document element.
 
 Inspired by [vue-global-events](https://github.com/shentao/vue-global-events).
 

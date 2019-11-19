@@ -1,7 +1,7 @@
 {
   "name": "vue-global-attrs",
   "version": "0.1.0",
-  "description": "Apply attributes to the the document element from a component.",
+  "description": "Declaratively apply attributes to the the document element.",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.es.js",
   "unpkg": "./dist/index.js",
