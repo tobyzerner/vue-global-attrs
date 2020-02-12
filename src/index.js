@@ -10,11 +10,8 @@ export default {
   },
 
   watch: {
-    '$attrs': {
-      immediate: true,
-      handler() {
-        this.refreshAttributes();
-      }
+    '$attrs'() {
+      this.refreshAttributes();
     }
   },
 
@@ -27,7 +24,10 @@ export default {
       this.removeAttributes();
 
       Object.keys(this.$attrs).forEach(name => {
-        document.documentElement.setAttribute(name, this.$attrs[name]);
+        if (typeof this.$attrs[name] !== 'undefined') {
+          document.documentElement.setAttribute(name, this.$attrs[name]);
+        }
+
         this.currentAttrs.push(name);
       });
     },
