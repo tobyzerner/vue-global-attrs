@@ -27,8 +27,12 @@ export default {
       this.removeAttributes();
 
       Object.keys(this.$attrs).forEach(name => {
-        if (typeof this.$attrs[name] !== 'undefined') {
-          document.documentElement.setAttribute(name, this.$attrs[name]);
+        const value = this.$attrs[name];
+
+        if (value === false) {
+          document.documentElement.removeAttribute(name);
+        } else if (typeof value !== 'undefined') {
+          document.documentElement.setAttribute(name, value === true ? '' : value);
         }
 
         this.currentAttrs.push(name);
