@@ -10,8 +10,11 @@ export default {
   },
 
   watch: {
-    '$attrs'() {
-      this.refreshAttributes();
+    '$attrs': {
+      immediate: true,
+      handler() {
+        this.refreshAttributes();
+      }
     }
   },
 
