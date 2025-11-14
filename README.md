@@ -2,6 +2,9 @@
 
 > Declaratively apply attributes to the the document element.
 
+> [!WARNING]  
+> The project is no longer maintained. Use [Unhead](https://unhead.unjs.io) instead.
+
 Inspired by [vue-global-events](https://github.com/shentao/vue-global-events).
 
 ## Installation
